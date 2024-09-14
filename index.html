@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Image Search App</h1>
+        
+        <!-- Search Box -->
+        <form class="d-flex justify-content-center mb-4">
+            <input type="text" class="form-control w-50" id="search-input" placeholder="Enter search term...">
+            <button class="btn btn-success ml-2" id="search-btn">Search</button>
+        </form>
+
+        <!-- Image Cards -->
+        <div class="row" id="search-results">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1682695799561-033f55f75b25?ixlib=rb-4.0.3&ixid=M3wXMjA3fDB8MHxwaG90by1wMD1fhxf8GVufD8BfHxf8A3%3D%3D&auto-format&fit=crop&w=1470&q=80" 
+                    alt="Mountains under the sky" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountains under the sky</h5>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+     
+      <!-- Show More Button -->
+    <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-success" id="show-more-button">Show More</button>
+    </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
